@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web site en desarrollo" />
+    <meta name="description" content="Subsede Palmar Grande">
+
+    <link rel="shortcut icon" href="./assets/img/palmar.png">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/body.css">
+    
+    <link rel="stylesheet" href="styles/chatbot.css">
+   
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/reaccion.js"></script>
+    <script src="scripts/chatbot.js"></script>
+     <link rel="stylesheet" href="styles/media.css">
+    <script src="scripts/tasks.js"></script>
+    <title>Subsede Palmar Grande</title>
+</head>
+
+<!-- <body onload="cargar()"> -->
+<body>
+    <header>
+        <nav class="topNav">
+            <div class="cont-nav">
+                <div class="navbar-brand">
+
+                    <div class="cont-logo">
+                        <a href="views/instituto.html"
+                                target="ifr-escuela"><span><img src="assets/img/palmar.png" alt="logo " width="160"
+                                    height="160">
+                                <p><b>Gral. Paz</b></p>
+                                <p><b>Corrientes</b></p>
+                            </span>
+                        </a>
+                    </div>
+                    <a href="views/instituto.html"
+                                target="ifr-escuela" class="title">
+                        <h1>Subsede Palmar Grande</h1>
+                        <h2><b>ISFD "Caá Catí"</b></h2>
+                    </a>
+                    <div class="navbar-end">
+                        <iframe class="ifr-reloj" name="ifr-reloj" src="reloj/reloj.html" width="220"
+                            height="130" style="border: none;">Reloj</iframe>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="cont-menu">
+                <div class="men-prin">
+                                <buttom id="bnt-movil" ">
+                                    <img style="cursor: pointer;" onclick="botoneraMovil()" id="img-btn" src="./assets/img/estado1.png" alt="">
+                                </buttom>
+
+                    <div id="divBotoneraMovil" class="navbar-start">
+                        <!--div class="accordion">
+                            <div class="section1"-->
+                        
+                        
+                        <span class="navbar-item">
+                            <a class="navbar_btn" href="views/instituto.html"
+                                target="ifr-escuela">Instituto</a></span>
+                        <span class="navbar-item">
+                            <a class="navbar_btn" href="views/carreras.html"
+                                target="ifr-escuela">Carreras</a></span>
+                        <span class="navbar-item">
+                            <a class="navbar_btn" href="views/alumnos.html?tipo=alumno"
+                             target="ifr-escuela">Alumnos</a></span>
+                        <span class="navbar-item">
+                            <a  class="navbar_btn" href="views/docentes.html?tipo=docente" target="ifr-escuela">Docentes</a>
+                        </span>
+                        <span class="navbar-item">
+                            <a class="navbar_btn" href="views/categoria.html" target="ifr-escuela">Eventos</a>
+                        </span>
+                        </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main> 
+        <div class="sct-body">
+            <div class="columns">
+                <div class="column-is-13">
+                    <div class="acordeon-invisible">
+                        <div class="box-content">
+                            <div class="form-group">
+                                <h3>Menu Sima</h3>
+                                <!-- <p></p> -->
+                                <div class="accordion">
+                                    <div onload="mostrar()" class="section1">
+                                        <input type="checkbox" id="section1" class="accordion__input">
+                                        <label for="section1" class="accordion__label">Carreras</label>
+                                        <div class="accordion__content">
+                                            <label for="lbl-mesa">Seleccione una de las carreras disponibles </label>
+                                            <span class="navbar-item"><a href="https://simaeducativa.mec.gob.ar/caacati/">TSDS</a></span>
+                                            <ol>
+                                                <li><a onclick="alert('Debes iniciar sesíon en Sima primero')"  link href="https://simaeducativa.mec.gob.ar/modulo/alumno/?caacati" > Plan de
+                                                        estudios</a></li>
+
+                                                <li><a> Materias</a></li>
+                                          
+                                            </ol>
+                                            <span class="navbar-item"><a href="https://simaeducativa.mec.gob.ar/caacati/">TSASyPS</a></span>
+                                            <p align-content="center">No están disponibles los datos aún.</p>
+                                        </div>
+                                    </div>
+                                    <div >
+                                        <input type="checkbox" id="section2" class="accordion__input">
+                                        <label for="section2" class="accordion__label">Alumnos</label>
+                                        <div class="accordion__content">
+                                            <ol>
+                                                <li><a onclick="alert('Debes registrarte en Sima primero')"  link href="https://simaeducativa.mec.gob.ar/modulo/ingresante/?caacati"> Ingresantes</a></li>
+                                                <li><a onclick="alert('Debes iniciar sesíon en Sima primero')"  link href="https://simaeducativa.mec.gob.ar/modulo/alumno/?caacati"> Estudiantes</a></li>
+                                                <li><a onclick="alert('Debes iniciar sesíon en Sima primero')"  link href="https://simaeducativa.mec.gob.ar/modulo/alumno/?caacati"> Examenes</a></li>
+                                                <li><a link href="./views/egresados.html" target="ifr-escuela"> Egresados</a></li>
+
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="section3" class="accordion__input">
+                                        <label for="section3" class="accordion__label">Docentes</label>
+                                        <div class="accordion__content">
+                                            <ol>
+                                                <li><a  onclick="alert('Debes iniciar sesíon en Sima primero')" link href="https://simaeducativa.mec.gob.ar/caacati/"> Actos</a></li>
+                                                <li><a  onclick="alert('Debes iniciar sesíon en Sima primero')" link href="https://simaeducativa.mec.gob.ar/caacati/">Perfil</a>
+                                                </li>
+                                                <li><a  onclick="alert('Debes iniciar sesíon en Sima primero')" href="https://simaeducativa.mec.gob.ar/caacati/">Prácticas </a></li>
+                                                <li><a  onclick="alert('Debes iniciar sesíon en Sima primero')" href="https://simaeducativa.mec.gob.ar/caacati/">Jornadas</a></li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="section4" class="accordion__input">
+                                        <label for="section4" class="accordion__label">Eventos</label>
+                                        <div class="accordion__content">
+                                            <li><a link href="./views/eventos.html">Caminata</a></li>
+                                            <li><a link href="./views/eventos.html">Maraton de lectura </a></li>
+                                            <li><a href="./views/eventos.html">Expo Carreras</a></li>
+                                            <p>
+                                                Además de los actos patrios
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </article>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="cont-ifr">
+                   
+                    <!--El iframe deberia estar hidden, solo ser visible al hacer clic en una opcion y cargar la correspondiente-->
+                    <iframe  class="ifr-escuela" style=" background-image: url(./assets/img/copiaFondo.png);background-size: cover;background-position: center;" name="ifr-escuela" src=" ">
+                        
+                    </iframe>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div>
+            
+        </dic>
+        <div class="contConsi">
+            <hr>
+                <p id="consi"></p>
+        </div>
+    
+         
+        <!-- Floating Chat Icon -->
+         <div id="chatbot-icon">💬
+         </div>
+        <!-- Chatbot Container -->
+        <div id="chatbot-container" class="hidden">
+            <div id="chatbot-header">
+            <span>Chatbot "Palmito"</span>
+            <button id="close-btn">&times;</button>
+            </div>
+        <div id="chatbot-body">
+            <div id="chatbot-messages"></div>
+        </div>
+        <div id="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Ingrese su consulta..." />
+            <button id="send-btn">Enviar</button>
+        </div>
+        </div>
+        </main>
+        <section class="st-conts">
+        <div class="st-title" >
+            <h4><buttom onclick="visible()">Dejanos tu comentario</buttom></h4>
+                          <h4 onclick="visibleGenerico('comentarios')">Ver comentarios anteriores</h4>
+
+            <div class="cont-fila">
+                    <div class="cnt-suger">
+                            <div class="oculto" id="oculto" style="display: none;">
+
+
+                        <form id="formTask">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="name" placeholder="Ingrese su nombre aquí">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="janina.sanz.30@gmail.com">
+                        
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="msj" cols="30" rows="10"
+                            placeholder="Ingrese su mensaje"></textarea>
+                        <div class="cont-columna"><button  onclick=" guardarTarea()">Guardar</button></div>
+                        </form>
+                    </div> 
+                    
+            </div>
+         </div>
+         <div id="comentarios"   style="display: none;">
+                    
+                    <div style="background-color: azure;" id="lista-comentarios"></div>
+                    <div id="controles-paginacion"></div>
+         </div>
+          
+        </div>
+                
+        </section>
+           
+
+     <footer>
+        <div class="cont-footer">
+            <h4>Diseñado por: Brian E. Maciel - TSDS - 2do año | <strong>© Copyright. Todos los
+                    derechos reservados.</strong></h4>
+            <p>Palmar Grande</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

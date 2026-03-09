@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <style>
+      body {
+        background-color: white;
+        display: flex;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #dfd6d6;
+        margin: 0px;
+        border-radius: 8px;
+      }
+    </style>
+    <div class="container">
+      <div class="px-4 sm:px-0">
+        <h3 class="text-base/7 font-semibold text-gray-900">
+          Información sobre el evento
+        </h3>
+        <p id="tituloEvento" class="mt-1 max-w-2xl text-sm/6 text-gray-500"></p>
+      </div>
+      <div class="mt-6 border-t border-gray-100">
+        <dl class="divide-y divide-gray-100">
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm/6 font-medium text-gray-900">Acargo de:</dt>
+            <dd
+              id="responsableDe"
+              class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0"
+            ></dd>
+          </div>
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm/6 font-medium text-gray-900">Evento para:</dt>
+            <dd
+              id="eventoPara"
+              class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0"
+            ></dd>
+          </div>
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm/6 font-medium text-gray-900">
+              Numero de contacto
+            </dt>
+            <dd
+              id="numeroDeContacto"
+              class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0"
+            ></dd>
+          </div>
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm/6 font-medium text-gray-900">
+              Fecha del evento
+            </dt>
+            <dd
+              id="fechaEvento"
+              class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0"
+            ></dd>
+          </div>
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm/6 font-medium text-gray-900">
+              Acerca de evento
+            </dt>
+            <dd
+              id="acercaDelEvento"
+              class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0"
+            ></dd>
+          </div>
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm/6 font-medium text-gray-900">Meteriales</dt>
+            <dd class="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+              <ul
+                role="list"
+                class="divide-y divide-gray-100 rounded-md border border-gray-200"
+              >
+                <li
+                  class="flex items-center justify-between py-4 pr-5 pl-4 text-sm/6"
+                >
+                  <div class="flex w-0 flex-1 items-center">
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      data-slot="icon"
+                      aria-hidden="true"
+                      class="size-5 shrink-0 text-gray-400"
+                    >
+                      <path
+                        d="M15.621 4.379a3 3 0 0 0-4.242 0l-7 7a3 3 0 0 0 4.241 4.243h.001l.497-.5a.75.75 0 0 1 1.064 1.057l-.498.501-.002.002a4.5 4.5 0 0 1-6.364-6.364l7-7a4.5 4.5 0 0 1 6.368 6.36l-3.455 3.553A2.625 2.625 0 1 1 9.52 9.52l3.45-3.451a.75.75 0 1 1 1.061 1.06l-3.45 3.451a1.125 1.125 0 0 0 1.587 1.595l3.454-3.553a3 3 0 0 0 0-4.242Z"
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <div class="ml-4 flex min-w-0 flex-1 gap-2">
+                      <span
+                        id="materialDescargable"
+                        class="truncate font-medium text-gray-900"
+                        >recursos.pdf</span
+                      >
+                      <span
+                        id="tamañoDescargable"
+                        class="shrink-0 text-gray-400"
+                        >1.4mb</span
+                      >
+                    </div>
+                  </div>
+                  <div class="ml-4 shrink-0">
+                    <a
+                      href="#"
+                      class="font-medium text-indigo-600 hover:text-indigo-500"
+                      >Descargar</a
+                    >
+                  </div>
+                </li>
+                <li
+                  class="flex items-center justify-between py-4 pr-5 pl-4 text-sm/6"
+                >
+                  <div class="flex w-0 flex-1 items-center">
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      data-slot="icon"
+                      aria-hidden="true"
+                      class="size-5 shrink-0 text-gray-400"
+                    >
+                      <path
+                        d="M15.621 4.379a3 3 0 0 0-4.242 0l-7 7a3 3 0 0 0 4.241 4.243h.001l.497-.5a.75.75 0 0 1 1.064 1.057l-.498.501-.002.002a4.5 4.5 0 0 1-6.364-6.364l7-7a4.5 4.5 0 0 1 6.368 6.36l-3.455 3.553A2.625 2.625 0 1 1 9.52 9.52l3.45-3.451a.75.75 0 1 1 1.061 1.06l-3.45 3.451a1.125 1.125 0 0 0 1.587 1.595l3.454-3.553a3 3 0 0 0 0-4.242Z"
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <div class="ml-4 flex min-w-0 flex-1 gap-2">
+                      <span
+                        id="segundoMaterialDescargable"
+                        class="truncate font-medium text-gray-900"
+                        >instructivos.pdf</span
+                      >
+                      <span
+                        id="tamañoSMDescargable"
+                        class="shrink-0 text-gray-400"
+                        >4.5mb</span
+                      >
+                    </div>
+                  </div>
+                  <div class="ml-4 shrink-0">
+                    <a
+                      href="#"
+                      class="font-medium text-indigo-600 hover:text-indigo-500"
+                      >Descargar</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </body>
+</html>

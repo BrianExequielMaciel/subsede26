@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*:root {
+  --color-primario: #5681cd;
+  --color-secundario: #ffff;
+  --color-terciario: #d8da45;
+  --color-cuaternario: #000000;
+  --color-cinco: #54cfff;
+  --fuente-montserrat: "Montserrat", sans-serif;
+  --fuente-krona: "Krona One", sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html {
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+h1 h2 {
+  color: var(--color-secundario);
+}
+a {
+  color: var(--color-secundario);
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar_btn {
+  font-size: 1.5rem;
+}
+a:hover {
+  color: var(--color-secundario);
+  font-weight: bold;
+}
+img {
+  background-size: contain;
+}
+body {
+  font-family: var(--fuente-krona);
+  background-color: var(--color-secundario);
+  font-size: 16px;
+}
+main {
+  background-color: var(--color-primario);
+  color: var(--color-cuaternario);
+  font-size: 2rem;
+  height: 97vh;
+}
+.section1 {
+  display: block;
+}
+.cont-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*seccion 3- Contacto*/
+.st-conts {
+  backface-visibility: visible;
+  background-color: var(--color-primario);
+}
+.st-title {
+  width: 30%;
+  margin: 5px 32%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-secundario);
+  border-radius: 15px;
+  cursor: pointer;
+  flex-direction: column;
+}
+.cont-fila {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+}
+.cnt-suger {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-primario);
+}
+.st-conts h4 {
+  font-size: 1.2rem;
+  /* padding-bottom: 20px; */
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--fuente-montserrat);
+}
+.st-conts form {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #d5d5db;
+}
+.st-conts form * {
+  width: 100%;
+  margin: 5px 0;
+}
+.st-conts form input textarea {
+  background-color: white;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  outline: 1px solid grey;
+  border-radius: 5px;
+}
+.st-conts form button {
+  width: 150px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cont-columna {
+  width: 350px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer {
+  background-color: var(--color-cuaternario);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: var(--fuente-krona);
+}
+.cont-footer {
+  flex-direction: row;
+}

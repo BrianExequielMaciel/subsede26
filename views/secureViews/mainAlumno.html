@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../../scripts/reaccion.js"></script>
+            <link rel="stylesheet" href="../secureViews/styleSV.css">
+                <script src="../../scripts/proteger.js"></script>
+
+
+
+    <title>MainAlumno</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-item">
+          <p>Busqueda</p>
+          <p>Notificaciones</p>
+          <div class="user_style">
+            <img src="" style="
+                              width: 10px;
+                               height: 10px;
+                              background-color: #46ef46;
+                              border-radius: 8px;" >
+             <p style="color: rgb(243, 243, 243);" id="bienvenida"></p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="btn-container">
+      <buttom id="bnt-movil" onclick="botoneraMovil()">
+        <img
+          style="cursor: pointer"
+          id="img-btn"
+          src="../../assets/img/estado1.png"
+          alt=""
+        />
+      </buttom>
+    </div>
+    <div class="container">
+      <div id="divBotoneraMovil" class="btn-principal">
+        <a href="#1">Documentos</a>
+        <a href="#2">Información</a>
+        <a href="#3">Ver Legajos</a>
+        <a href="#4">Perfil</a>
+        <a href="#5">Notificaciones </a>
+        <a href="#6">Configuraciones</a>
+        <a onclick="cerrarSesion()">Cerrar sesión</a>
+      </div>
+      <main>
+        <section>
+          <div class="menu-content">
+            <div id="1" class="menu__section">
+              <h3>Documentaciónes importantes</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                ea error, sequi nostrum odit perspiciatis suscipit! Suscipit,
+                quisquam voluptatum eligendi, exercitationem aliquid sapiente
+                assumenda reiciendis, ab earum cumque recusandae itaque?
+              </p>
+              <div>
+                <a>Documento</a>
+                <a>Documento</a>
+                <a>Documento</a>
+              </div>
+
+             
+            </div>
+              <br></br>
+             <br></br>
+            <div id="2" class="menu__section">
+               <h3>Información de estado</h3>
+
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+                provident quaerat debitis consectetur obcaecati delectus
+                voluptas accusantium, maiores nisi at distinctio aut nobis minus
+                veniam in nulla nostrum repudiandae sit?
+              </p>
+            </div>
+            <br></br>
+             <br></br>
+          </div>
+          <div id="3" class="menu__section">
+            <h3>Legajo</h3>
+
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              laboriosam eos iusto suscipit iste veniam accusamus non qui?
+              Perspiciatis, ea deserunt similique ut illo tempore laboriosam
+              molestias omnis nemo inventore!
+            </p>
+          </div>
+           <div id="4" class="menu__section">
+             <h3>Notificaciones</h3>
+            <div class="btn__content-enlaces">
+               <h4>Todavia no hay notificaciones</h4>
+            </div>
+          </div>
+
+          <div id="5" class="menu__section">
+                        <h3>Perfil</h3>
+                        <div class="perfil__menu">
+                          <h5>Nombre</h5>
+                          <p class="perfil__nombre"></p>
+                          <h5>Apellido</h5>
+                          <p class="perfil__apellido"></p>
+                          <h5>DNI</h5>
+                          <p class="perfil__dni"></p>
+                          <h5>Correo</h5>
+                          <p class="perfil__correo"></p>
+                        </div>
+               <div class="btn__content-enlaces">
+                    <a>Cambiar</a>
+               </div>
+            </div>
+
+           <div id="6" class="menu__section">
+                             <h3>Configuraciones</h3>
+                <div class="btn__content-enlaces">
+                      <a>Notificaciones</a>
+                      <a>Perfil</a>
+                      <a>Reportar un problema</a>
+                </div>        
+          </div>
+                 
+          </div>
+        </section>
+        <!-- <div class="cont-ifr">
+          <iframe class="ifr-docente" name="ifr-docente" src=" "> </iframe>
+        </div> -->
+      </main>
+    </div>
+                <script src="../../scripts/proteger.js"></script>
+
+    
+
+  </body>
+</html>

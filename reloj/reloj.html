@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Reloj</title>
+    <link rel="stylesheet" href="../styles/reloj.css" />
+    <link rel="stylesheet" href="../styles/media.css" />
+  </head>
+  <body>
+    <style>
+      * {
+        font-size: 14px;
+      }
+    </style>
+    <div class="wrap">
+      <div class="widget">
+        <div class="fecha">
+          <p id="pFecha" class="diaSemana"></p>
+          <p id="pDia" class="dia"></p>
+          <p>-</p>
+          <p id="pMes" class="mes"></p>
+          <p>-</p>
+          <p id="pYear" class="year"></p>
+        </div>
+
+        <div class="reloj">
+          <p id="pHoras" class="horas"></p>
+          <span>:</span>
+          <p id="pMinutos" class="minutos"></p>
+          <p id="pSegundos" class="segundos"></p>
+        </div>
+      </div>
+    </div>
+
+    <p class="pSaludo" id="pSaludo"></p>
+    <script src="../scripts/hora.js"></script>
+    <script src="../scripts/fecha.js"></script>
+  </body>
+</html>

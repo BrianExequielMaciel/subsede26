@@ -1,0 +1,186 @@
+@media (max-width: 1024px) {
+  * {
+    font-size: 14px;
+  }
+  h2,
+  h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  /* Reloj y titulo */
+  iframe {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 200px;
+  }
+  .reloj,
+  .pSaludo {
+    font-size: 1rem;
+  }
+  /* fin relog */
+  /* nav menues */
+  .navbar-start {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .navbar_btn {
+    font-size: 1rem;
+  }
+  .navbar_btn {
+    font-size: 20px;
+  }
+  .navbar-end {
+    width: auto;
+  }
+  .ifr-reloj {
+    width: auto;
+  }
+  #img-btn {
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+  /* fin nav */
+  /* secion contacto */
+  .st-conts h4 {
+    font-size: 1rem;
+  }
+
+  .accordion__label,
+  .st-conts form * {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin: 5px;
+  }
+  .box-content,
+  .accordion {
+    width: 200px;
+    padding: 0px;
+  }
+  .st-conts form button {
+    font-size: 0.6rem;
+  }
+  .st-title {
+    width: 60%;
+    margin: 5px 20%;
+  }
+  #chatbot-header {
+    font-size: 0.8rem;
+  }
+  #close-btn,
+  #close-btn {
+    font-size: 1rem;
+  }
+  #tituloCarrera {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5681cd;
+  }
+
+  /*================================================*/
+
+  @media (max-width: 480px) {
+    * {
+      font-size: 10px;
+    }
+    p {
+      font-size: 1rem;
+    }
+    h2,
+    h1 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+    /* Reloj y titulo */
+    iframe {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      width: 200px;
+    }
+    .reloj,
+    .pSaludo {
+      font-size: 1rem;
+    }
+    /* fin relog */
+    /* nav menues */
+    .navbar-start {
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+    .navbar_btn {
+      font-size: 1rem;
+    }
+    .navbar_btn {
+      font-size: 20px;
+    }
+    #img-btn {
+      display: block;
+      height: 50px;
+      width: 50px;
+    }
+    /* fin nav */
+    /* secion contacto */
+    .st-conts h4 {
+      font-size: 1rem;
+    }
+
+    .accordion__label,
+    .st-conts form * {
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+      margin: 5px;
+    }
+    .box-content,
+    .accordion {
+      display: none;
+    }
+    .cont-ifr {
+      margin-left: 0px;
+    }
+    .navbar-end {
+      display: none;
+    }
+    .st-conts form button {
+      font-size: 0.6rem;
+    }
+    .st-title {
+      width: 80%;
+      margin: 5px 10%;
+    }
+    #chatbot-header {
+      font-size: 0.8rem;
+    }
+    #close-btn,
+    #close-btn {
+      font-size: 1rem;
+    }
+    #tableOfCarrera {
+      width: 300px;
+      table-layout: auto;
+    }
+    #tituloCarrera {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #5681cd;
+    }
+    .navbar-brand {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .title {
+      text-align: center;
+    }
+  }
+}
