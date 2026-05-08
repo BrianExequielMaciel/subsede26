@@ -6,7 +6,11 @@
     <title>Eventos</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
   </head>
@@ -36,14 +40,19 @@
       <div class="mt-6 border-t border-gray-100">
         <dl class="divide-y divide-gray-100">
           <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt class="text-sm/6 font-medium text-gray-900">Acargo de:</dt>
+            <dt class="text-sm/6 font-medium text-gray-900">
+              <b>Acargo de:</b> Subsede en Palmar Grande(I.S.F.D.Caa Cati)
+            </dt>
             <dd
               id="responsableDe"
               class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0"
             ></dd>
           </div>
           <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt class="text-sm/6 font-medium text-gray-900">Evento para:</dt>
+            <dt class="text-sm/6 font-medium text-gray-900">
+              <b>Evento para:</b> promover la salud, el bienestar y el
+              desarrollo integral
+            </dt>
             <dd
               id="eventoPara"
               class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0"
@@ -51,7 +60,7 @@
           </div>
           <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm/6 font-medium text-gray-900">
-              Numero de contacto
+              <b>Numero de contacto:</b> (0 00 000 000)
             </dt>
             <dd
               id="numeroDeContacto"
@@ -60,7 +69,7 @@
           </div>
           <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm/6 font-medium text-gray-900">
-              Fecha del evento
+              <b>Fecha del evento:<</b> a confirmarse
             </dt>
             <dd
               id="fechaEvento"
@@ -69,7 +78,7 @@
           </div>
           <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm/6 font-medium text-gray-900">
-              Acerca de evento
+              Acerca de evento:
             </dt>
             <dd
               id="acercaDelEvento"
@@ -115,6 +124,7 @@
                   </div>
                   <div class="ml-4 shrink-0">
                     <a
+                      onclick="alert('Aun no hay ningun material')"
                       href="#"
                       class="font-medium text-indigo-600 hover:text-indigo-500"
                       >Descargar</a
@@ -153,6 +163,7 @@
                   </div>
                   <div class="ml-4 shrink-0">
                     <a
+                      onclick="alert('Aun no hay ningun material')"
                       href="#"
                       class="font-medium text-indigo-600 hover:text-indigo-500"
                       >Descargar</a

@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     espacio = "<br></br>";
     mensaje = `Estas son algunas preguntas que puedes hacerme: 
     
-    ubicación, coordinadora, carrera.
+    ubicación, coordinadora, carrera y otras cosas relacionas al instituto.
     `;
     mensajeConEspacio = espacio + mensaje;
     return mensajeConEspacio;
@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ) {
       botMessage = "Nos encontramos en Palmar Grande, Corrientes.";
     } else if (userMessage.toLowerCase().includes("coordinadora")) {
-      botMessage = "Sí, sé quien es la coordinadora. Prof. Noelia Cabrera";
+      botMessage =
+        "Sí, sé quien es la coordinadora.La cordinadora es la Prof. Noelia Cabrera";
     } else if (
       userMessage.toLowerCase().includes("carrera") ||
       userMessage.toLowerCase().includes("carreras")
@@ -76,6 +77,30 @@ document.addEventListener("DOMContentLoaded", function () {
         "Actualmente, contamos con dos tecnicaturas: TSDS - TSASyPS ";
     } else if (userMessage.toLowerCase().includes("adios")) {
       botMessage = "Adios que tengas un lindo dia: ";
+    } else if (
+      userMessage.toLowerCase().includes("inscripciones") ||
+      userMessage.toLowerCase().includes("inscripcion")
+    ) {
+      botMessage =
+        "Para inscribirte consulta la pestaña alumno y sigues los pasos, asegurate de inscribirte antes del cierre de las inscripciones";
+    } else if (
+      userMessage.toLowerCase().includes("usuario") ||
+      userMessage.toLowerCase().includes("usuarios")
+    ) {
+      botMessage =
+        "Para generar tu usuario consulta la pestaña alumno y sigues los pasos, asegurate de completar todos los campos con datos correctos antes de generar tu usuario";
+    } else if (
+      userMessage.toLowerCase().includes("instituto") ||
+      userMessage.toLowerCase().includes("historia")
+    ) {
+      botMessage =
+        " La institución educativa Subsede en Palmar Grande(I.S.F.D.Caa Cati) es un establecimiento educativo  de gestión pública ubicado en el Departamento de General Paz de la Provincia de Corrientes.";
+    } else if (
+      userMessage.toLowerCase().includes("docente") ||
+      userMessage.toLowerCase().includes("docentes")
+    ) {
+      botMessage =
+        " Si eres docente debes registrarte en la plataforma, accediendo a la pestaña docente. sigue el enlase de registrar nuevo usuario e inscribite";
     } else {
       botMessage = "Lo siento, no entiendo tu pregunta.";
     }
