@@ -24,8 +24,7 @@
       bienvenida.textContent = usuario.username;
     }
     bienvenida.textContent = usuario.username;
-  }
-  if (usuario.tipo === "docente") {
+  } else if (usuario.tipo === "docente") {
     let bienvenida = document.getElementById("bienvenida");
     if (bienvenida) {
       bienvenida.textContent = usuario.username;
